@@ -9,7 +9,7 @@ public class MenuOptions {
                         Select an option:\s
                           1) Run
                           2) Jump
-                          3) Page 2\s
+                          3) Page 2 this page loops\s
                           4) Exit
                         \s""");
 
@@ -60,9 +60,11 @@ public class MenuOptions {
     }
 
     private void run() {
+        System.out.println("Running...");
     }
 
     private void jump() {
+        System.out.println("Jumping...");
     }
 
     private void page2() {

@@ -1,0 +1,4 @@
+"keyboard",T
+"mouse",F
+"screen",T
+"headset",T

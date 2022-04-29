@@ -15,7 +15,7 @@ public class MenuOptions {
 
         int selection = input.nextInt();
         input.nextLine();
-        // continues...
+
         switch (selection) {
             case 1 -> this.run();
             case 2 -> this.jump();

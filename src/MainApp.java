@@ -1,16 +1,19 @@
 import java.util.ArrayList;
 public class MainApp {
     public static void main(String[] args) {
-        ReadFile customerFileInMemory = new ReadFile();
+        ReadFile fileInMemory = new ReadFile();
 
         ArrayList<String> customerArrayList;
         ArrayList<String> sparePartsArrayList;
 
-        customerArrayList = customerFileInMemory.readFileCustomers();
-        sparePartsArrayList = customerFileInMemory.readFileSpareParts();
+        customerArrayList = fileInMemory.readFileCustomers();
+        sparePartsArrayList = fileInMemory.readFileSpareParts();
 
         System.out.println(customerArrayList);
         System.out.println(sparePartsArrayList);
+
+        MenuOptions menu = new MenuOptions();
+        menu.display();
 
     }
 }

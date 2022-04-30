@@ -1,7 +1,70 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MenuOptions {
     private final Scanner input = new Scanner(System.in);
+    ReadFile fileInMemory = new ReadFile();
+    ArrayList<String> customerArrayList = fileInMemory.readFileCustomers();
+    ArrayList<String> sparePartsArrayList = fileInMemory.readFileSpareParts();
+
+    public void menu() {
+        System.out.println("1. Add a customer");
+        System.out.println("2. Add a spare part");
+        System.out.println("3. Search for a customer");
+        System.out.println("4. Search for a spare part");
+        System.out.println("5. Exit");
+    }
+
+    public void addCustomer() {
+        System.out.println("Enter customer name: ");
+        String customerName = input.nextLine();
+        System.out.println("Enter customer address: ");
+        String customerAddress = input.nextLine();
+        System.out.println("Enter customer phone number: ");
+        String customerPhoneNumber = input.nextLine();
+        System.out.println("Enter customer email: ");
+        String customerEmail = input.nextLine();
+        System.out.println("Enter customer password: ");
+        String customerPassword = input.nextLine();
+
+        String customer = customerName + "," + customerAddress + "," + customerPhoneNumber + "," + customerEmail + "," + customerPassword;
+
+        customerArrayList.add(customer);
+    }
+
+    public void addSparePart() {
+        System.out.println("Enter spare part name: ");
+        String sparePartName = input.nextLine();
+        System.out.println("Enter spare part price: ");
+        String sparePartPrice = input.nextLine();
+        System.out.println("Enter spare part quantity: ");
+        String sparePartQuantity = input.nextLine();
+
+        String sparePart = sparePartName + "," + sparePartPrice + "," + sparePartQuantity;
+
+        sparePartsArrayList.add(sparePart);
+    }
+
+    public void searchCustomer() {
+        System.out.println("Enter customer name: ");
+        String customerName = input.nextLine();
+        for (String customer : customerArrayList) {
+            if (customer.contains(customerName)) {
+                System.out.println(customer);
+            }
+        }
+    }
+
+    public void searchSparePart() {
+        System.out.println("Enter spare part name: ");
+        String sparePartName = input.nextLine();
+        for (String sparePart : sparePartsArrayList) {
+            if (sparePart.contains(sparePartName)) {
+                System.out.println(sparePart);
+            }
+        }
+
+    }
     public void display() {
         System.out.println("-- Actions --");
         System.out.println(
@@ -60,6 +123,9 @@ public class MenuOptions {
     }
 
     private void run() {
+        System.out.println(customerArrayList);
+        WriteFile.writeFileOrders(customerArrayList);
+
         System.out.println("Running...");
     }
 

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.02&#10;this program reads two files and stores the data to separate ArrayLists&#10;adds basic menu template">
+      <change afterPath="$PROJECT_DIR$/src/CustomerObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OrderObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Orders.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WriteFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651228675967</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v0.02&#10;this program reads two files and stores the data to separate ArrayLists&#10;adds basic menu template">
+      <created>1651230555756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651230555756</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

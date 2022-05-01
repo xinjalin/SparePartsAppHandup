@@ -1,4 +1,4 @@
-"keyboard",T
-"mouse",F
-"screen",T
-"headset",T
+"keyboard",true
+"mouse",false
+"screen",true
+"headset",false

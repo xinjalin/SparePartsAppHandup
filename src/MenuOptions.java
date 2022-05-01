@@ -6,6 +6,9 @@ public class MenuOptions {
     ArrayList<String> customerArrayList = fileInMemory.readFileCustomers();
     ArrayList<String> sparePartsArrayList = fileInMemory.readFileSpareParts();
 
+    ArrayList<Customer> customers = new ArrayList<>();
+    ArrayList<SparePartsObj> spareParts = new ArrayList<>();
+
     public void display() {
         System.out.println("-- Actions --");
         System.out.println(
@@ -82,7 +85,28 @@ public class MenuOptions {
     }
 
     private void selectSparePart() {
+        // similar to select customer
+        sparePartsArrayList.forEach(System.out::println);
+        System.out.println("Enter the name of the spare part: ");
+        String sparePartName = input.nextLine();
+        String selectedSparePart;
 
+        switch (sparePartName) {
+            case "keyboard" -> {
+                System.out.println("Keyboard selected");
+                selectedSparePart = sparePartsArrayList.get(0);
+                selectedSparePart = selectedSparePart.replace("[", "");
+                selectedSparePart = selectedSparePart.replace("]", "");
+                selectedSparePart = selectedSparePart.replace(" ", "");
+                String[] selectedSparePartArray = selectedSparePart.split(",");
+
+                SparePartsObj sparePartInMenu = new SparePartsObj(selectedSparePartArray[0], Boolean.valueOf(selectedSparePartArray[1]));
+                spareParts.add(sparePartInMenu);
+                createOrder();
+
+
+            }
+        }
     }
 
     private void selectCustomer() {
@@ -146,11 +170,14 @@ public class MenuOptions {
     }
 
     private void saveOrder() {
+        System.out.println("Saving order...");
+
 
         int orderNumber = OrderNumberGen.generateOrderNumber();
         System.out.println(orderNumber);
 
 
+        System.out.println("Order saved");
     }
 
     private void exit() {

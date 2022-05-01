@@ -1,4 +1,4 @@
-000001,"john","card"
-000002,"sam","cash"
-000003,susan,card
-000004,luke,cash
+[000001,"john","card"]
+[000002,"sam","cash"]
+[000003,susan,card]
+[000004,luke,cash]

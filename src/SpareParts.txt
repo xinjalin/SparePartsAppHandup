@@ -1,4 +1,4 @@
 "keyboard",true
 "mouse",false
-"screen",true
+"monitor",true
 "headset",false

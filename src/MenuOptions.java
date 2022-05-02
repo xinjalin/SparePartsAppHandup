@@ -51,7 +51,7 @@ public class MenuOptions {
     private void addSparePart() {
         System.out.println("Enter spare part name: ");
         String sparePartName = input.nextLine();
-        System.out.println("Is the part genuine T or F: ");
+        System.out.println("Is the part genuine true or false: ");
         String sparePartGenuine = input.nextLine();
 
         String sparePart = "[" + sparePartName + "," + sparePartGenuine + "]";
@@ -103,8 +103,42 @@ public class MenuOptions {
                 SparePartsObj sparePartInMenu = new SparePartsObj(selectedSparePartArray[0], Boolean.valueOf(selectedSparePartArray[1]));
                 spareParts.add(sparePartInMenu);
                 createOrder();
+            }
+            case "mouse" -> {
+                System.out.println("Mouse selected");
+                selectedSparePart = sparePartsArrayList.get(1);
+                selectedSparePart = selectedSparePart.replace("[", "");
+                selectedSparePart = selectedSparePart.replace("]", "");
+                selectedSparePart = selectedSparePart.replace(" ", "");
+                String[] selectedSparePartArray = selectedSparePart.split(",");
 
+                SparePartsObj sparePartInMenu = new SparePartsObj(selectedSparePartArray[0], Boolean.valueOf(selectedSparePartArray[1]));
+                spareParts.add(sparePartInMenu);
+                createOrder();
+            }
+            case "monitor" -> {
+                System.out.println("Monitor selected");
+                selectedSparePart = sparePartsArrayList.get(2);
+                selectedSparePart = selectedSparePart.replace("[", "");
+                selectedSparePart = selectedSparePart.replace("]", "");
+                selectedSparePart = selectedSparePart.replace(" ", "");
+                String[] selectedSparePartArray = selectedSparePart.split(",");
 
+                SparePartsObj sparePartInMenu = new SparePartsObj(selectedSparePartArray[0], Boolean.valueOf(selectedSparePartArray[1]));
+                spareParts.add(sparePartInMenu);
+                createOrder();
+            }
+            case "headset" -> {
+                System.out.println("Headset selected");
+                selectedSparePart = sparePartsArrayList.get(3);
+                selectedSparePart = selectedSparePart.replace("[", "");
+                selectedSparePart = selectedSparePart.replace("]", "");
+                selectedSparePart = selectedSparePart.replace(" ", "");
+                String[] selectedSparePartArray = selectedSparePart.split(",");
+
+                SparePartsObj sparePartInMenu = new SparePartsObj(selectedSparePartArray[0], Boolean.valueOf(selectedSparePartArray[1]));
+                spareParts.add(sparePartInMenu);
+                createOrder();
             }
         }
     }
@@ -124,9 +158,8 @@ public class MenuOptions {
                 String[] selectedCustomerArray = selectedCustomer.split(",");
 
                 Customer customerInMenu = new Customer(selectedCustomerArray[0], selectedCustomerArray[1], selectedCustomerArray[2]);
-                System.out.println(customerInMenu.id());
-                System.out.println(customerInMenu.name());
-                System.out.println(customerInMenu.paymentType());
+                customers.add(customerInMenu);
+                createOrder();
             }
             case "2" -> {
                 System.out.println("Customer 2 selected");
@@ -136,9 +169,8 @@ public class MenuOptions {
                 String[] selectedCustomerArray = selectedCustomer.split(",");
 
                 Customer customerInMenu = new Customer(selectedCustomerArray[0], selectedCustomerArray[1], selectedCustomerArray[2]);
-                System.out.println(customerInMenu.id());
-                System.out.println(customerInMenu.name());
-                System.out.println(customerInMenu.paymentType());
+                customers.add(customerInMenu);
+                createOrder();
             }
             case "3" -> {
                 System.out.println("Customer 3 selected");
@@ -148,9 +180,8 @@ public class MenuOptions {
                 String[] selectedCustomerArray = selectedCustomer.split(",");
 
                 Customer customerInMenu = new Customer(selectedCustomerArray[0], selectedCustomerArray[1], selectedCustomerArray[2]);
-                System.out.println(customerInMenu.id());
-                System.out.println(customerInMenu.name());
-                System.out.println(customerInMenu.paymentType());
+                customers.add(customerInMenu);
+                createOrder();
             }
             case "4" -> {
                 System.out.println("Customer 4 selected");
@@ -160,9 +191,8 @@ public class MenuOptions {
                 String[] selectedCustomerArray = selectedCustomer.split(",");
 
                 Customer customerInMenu = new Customer(selectedCustomerArray[0], selectedCustomerArray[1], selectedCustomerArray[2]);
-                System.out.println(customerInMenu.id());
-                System.out.println(customerInMenu.name());
-                System.out.println(customerInMenu.paymentType());
+                customers.add(customerInMenu);
+                createOrder();
             }
             default -> System.out.println("Invalid selection please input 1 - 4 for your selection.");
         }
@@ -172,9 +202,10 @@ public class MenuOptions {
     private void saveOrder() {
         System.out.println("Saving order...");
 
-
         int orderNumber = OrderNumberGen.generateOrderNumber();
         System.out.println(orderNumber);
+
+        // System.out.println(customers.get(0).id());
 
 
         System.out.println("Order saved");

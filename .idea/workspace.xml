@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.04&#10;changelog&#10;- fixed file load to memory&#10;- added read and write methods&#10;- added menu options - a lot&#10;- added order number gen">
-      <change afterPath="$PROJECT_DIR$/src/SparePartsObj.java" afterDir="false" />
+    <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OrderNumbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderNumbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OrderObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpareParts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpareParts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651404603482</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-">
+      <created>1651428858960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651428858961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,7 +148,8 @@
     <MESSAGE value="v0.02&#10;this program reads two files and stores the data to separate ArrayLists&#10;adds basic menu template" />
     <MESSAGE value="v0.03&#10;added ability to write orders to file &#10;created customer object &#10;created orders object &#10;optimised MainApp.java&#10;moved file loaded to menu options" />
     <MESSAGE value="v0.04&#10;changelog&#10;- fixed file load to memory&#10;- added read and write methods&#10;- added menu options - a lot&#10;- added order number gen" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.04&#10;changelog&#10;- fixed file load to memory&#10;- added read and write methods&#10;- added menu options - a lot&#10;- added order number gen" />
+    <MESSAGE value="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -148,6 +158,15 @@
           <url>file://$PROJECT_DIR$/src/test.java</url>
           <line>7</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/MenuOptions.java</url>
+          <line>201</line>
+          <properties class="MenuOptions" method="saveOrder">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

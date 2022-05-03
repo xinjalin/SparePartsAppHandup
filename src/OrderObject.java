@@ -1,6 +1,6 @@
-public record OrderObject (int orderId, String customerName, String customerId, Boolean genuine, String paymentType) {
+public record OrderObject (int orderId, String customerName, String customerId, String paymentType, Boolean genuine, String sparePartName) {
 
-    public String toString() { return "Order ID: " + orderId + "Customer Name: " + customerName + "Customer ID: " + customerId + "Genuine Parts Only" + genuine + "Payment Type: " + paymentType;}
+    public String toString() { return "Order [id= " + orderId + "Customer Name: " + customerName + "Customer ID: " + customerId + "Payment Type: " + paymentType + "Genuine Parts Only" + genuine + "Spare Part Name: " + sparePartName + "]"; }
 
 }
 

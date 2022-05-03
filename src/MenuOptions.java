@@ -2,12 +2,12 @@ import java.util.*;
 
 public class MenuOptions {
     private final Scanner input = new Scanner(System.in);
-    ReadFile fileInMemory = new ReadFile();
-    ArrayList<String> customerArrayList = fileInMemory.readFileCustomers();
-    ArrayList<String> sparePartsArrayList = fileInMemory.readFileSpareParts();
+    public ReadFile fileInMemory = new ReadFile();
+    public ArrayList<String> customerArrayList = fileInMemory.readFileCustomers();
+    public ArrayList<String> sparePartsArrayList = fileInMemory.readFileSpareParts();
 
-    ArrayList<Customer> customers = new ArrayList<>();
-    ArrayList<SparePartsObj> spareParts = new ArrayList<>();
+    public ArrayList<Customer> customers = new ArrayList<>();
+    public ArrayList<SparePartsObj> spareParts = new ArrayList<>();
 
     public void display() {
         System.out.println("-- Actions --");
@@ -206,6 +206,17 @@ public class MenuOptions {
         System.out.println(orderNumber);
 
         // System.out.println(customers.get(0).id());
+        // make an object of customers names, id, payment, spare-part name and spare-part genuine
+        String customerName = customers.get(0).name();
+        String customerID = customers.get(0).id();
+        String paymentType = customers.get(0).paymentType();
+        String sparePartName = spareParts.get(0).name();
+        Boolean sparePartGenuine = spareParts.get(0).genuine();
+
+        OrderObject orderObject = new OrderObject(orderNumber, customerName, customerID, paymentType, sparePartGenuine, sparePartName);
+
+        System.out.println(orderObject.toString());
+
 
 
         System.out.println("Order saved");

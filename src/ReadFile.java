@@ -19,6 +19,7 @@ public class ReadFile {
                 customerDataLine = customerDataLine.replace("\"", "");
                 customerDataLine = customerDataLine.replace("[", "");
                 customerDataLine = customerDataLine.replace("]", "");
+                customerDataLine = customerDataLine.replace(" ", "");
                 String[] resultSplit = customerDataLine.split(",");
                 result.add(Arrays.toString(resultSplit));
                 // System.out.println(Arrays.toString(rawCustomerData));
@@ -43,6 +44,7 @@ public class ReadFile {
                 customerDataLine = customerDataLine.replace("\"", "");
                 customerDataLine = customerDataLine.replace("[", "");
                 customerDataLine = customerDataLine.replace("]", "");
+                customerDataLine = customerDataLine.replace(" ", "");
                 result.add(Arrays.toString(customerDataLine.split(",")));
                 // System.out.println(Arrays.toString(rawCustomerData));
             }
@@ -67,6 +69,7 @@ public class ReadFile {
                 customerDataLine = customerDataLine.replace("\"", "");
                 customerDataLine = customerDataLine.replace("[", "");
                 customerDataLine = customerDataLine.replace("]", "");
+                customerDataLine = customerDataLine.replace(" ", "");
                 result.add(Arrays.toString(customerDataLine.split(",")));
                 // System.out.println(Arrays.toString(rawCustomerData));
             }

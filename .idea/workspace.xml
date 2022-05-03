@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-">
+    <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.06&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OrderNumbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderNumbers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OrderObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SparePartsObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SparePartsObj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651496254537</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v0.06&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}">
+      <created>1651573645497</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651573645497</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,7 +165,8 @@
     <MESSAGE value="v0.03&#10;added ability to write orders to file &#10;created customer object &#10;created orders object &#10;optimised MainApp.java&#10;moved file loaded to menu options" />
     <MESSAGE value="v0.04&#10;changelog&#10;- fixed file load to memory&#10;- added read and write methods&#10;- added menu options - a lot&#10;- added order number gen" />
     <MESSAGE value="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.05&#10;changelog&#10;- object creation and save to array list for user selection&#10;-" />
+    <MESSAGE value="v0.06&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.06&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

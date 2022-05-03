@@ -205,20 +205,30 @@ public class MenuOptions {
         int orderNumber = OrderNumberGen.generateOrderNumber();
         System.out.println(orderNumber);
 
-        // System.out.println(customers.get(0).id());
-        // make an object of customers names, id, payment, spare-part name and spare-part genuine
         String customerName = customers.get(0).name();
         String customerID = customers.get(0).id();
         String paymentType = customers.get(0).paymentType();
+
+        // for (int i = 0; i < spareParts.size(); i++) {
         String sparePartName = spareParts.get(0).name();
         Boolean sparePartGenuine = spareParts.get(0).genuine();
 
-        OrderObject orderObject = new OrderObject(orderNumber, customerName, customerID, paymentType, sparePartGenuine, sparePartName);
+        String allGenuine;
 
-        System.out.println(orderObject.toString());
+        // check if the order has genuine spare parts
+        if (spareParts.get(0).genuine()) {
+            allGenuine = "1";
+        } else  {
+            allGenuine = "0";
+
+        }
 
 
+        // create order object
+        OrderObject orderObject = new OrderObject(orderNumber, customerName, customerID, paymentType, sparePartGenuine, allGenuine, sparePartName);
 
+        // write to file
+        WriteFile.writeFileOrders(orderObject.toString());
         System.out.println("Order saved");
     }
 

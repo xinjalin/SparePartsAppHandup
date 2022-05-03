@@ -223,7 +223,6 @@ public class MenuOptions {
 
         }
 
-
         // create order object
         OrderObject orderObject = new OrderObject(orderNumber, customerName, customerID, paymentType, sparePartGenuine, allGenuine, sparePartName);
 

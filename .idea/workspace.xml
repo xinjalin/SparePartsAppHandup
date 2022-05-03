@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651578913070</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order">
+      <created>1651579096824</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651579096824</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

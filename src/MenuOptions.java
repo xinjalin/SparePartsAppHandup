@@ -20,15 +20,17 @@ public class MenuOptions {
                           4) Exit - close program\s
                         \s""");
 
-        int selection = input.nextInt();
-        input.nextLine();
+        String selection = input.nextLine();
 
         switch (selection) {
-            case 1 -> this.addCustomer();
-            case 2 -> this.addSparePart();
-            case 3 -> this.createOrder();
-            case 4 -> this.exit();
-            default -> System.out.println("Invalid selection.");
+            case "1" -> this.addCustomer();
+            case "2" -> this.addSparePart();
+            case "3" -> this.createOrder();
+            case "4" -> this.exit();
+            default -> {
+                System.out.println("Invalid selection.");
+                display();
+            }
         }
 
     }
@@ -47,6 +49,8 @@ public class MenuOptions {
         customerArrayList.add(customer);
 
         WriteFile.writeFileCustomers(customer);
+        System.out.println("Customer added");
+        display();
     }
     private void addSparePart() {
         System.out.println("Enter spare part name: ");
@@ -59,6 +63,8 @@ public class MenuOptions {
         sparePartsArrayList.add(sparePart);
 
         WriteFile.writeFileSpareParts(sparePart);
+        System.out.println("Spare part added");
+        display();
     }
 
     private void createOrder() {
@@ -72,15 +78,17 @@ public class MenuOptions {
                           4) Back to main menu\s
                         \s""");
 
-        int selection = input.nextInt();
-        input.nextLine();
+        String selection = input.nextLine();
 
         switch (selection) {
-            case 1 -> this.selectCustomer();
-            case 2 -> this.selectSparePart();
-            case 3 -> this.saveOrder();
-            case 4 -> this.display();
-            default -> System.out.println("Invalid selection.");
+            case "1" -> this.selectCustomer();
+            case "2" -> this.selectSparePart();
+            case "3" -> this.saveOrder();
+            case "4" -> this.display();
+            default -> {
+                System.out.println("Invalid selection.");
+                createOrder();
+            }
         }
     }
 
@@ -140,6 +148,10 @@ public class MenuOptions {
                 spareParts.add(sparePartInMenu);
                 createOrder();
             }
+            default -> {
+                System.out.println("Invalid input");
+                selectSparePart();
+            }
         }
     }
 
@@ -194,7 +206,10 @@ public class MenuOptions {
                 customers.add(customerInMenu);
                 createOrder();
             }
-            default -> System.out.println("Invalid selection please input 1 - 4 for your selection.");
+            default -> {
+                System.out.println("Invalid selection please input 1 - 4 for your selection.");
+                selectCustomer();
+            }
         }
 
     }

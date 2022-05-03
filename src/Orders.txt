@@ -1,3 +1,4 @@
 Order [ID:34001 | Customer Name: john | Customer ID:000001 | Payment Type: card | Genuine Parts Only:false | Spare Part Name: mouse]
 Order [ID:120454 | Customer Name: john | Customer ID:000001 | Payment Type: card | Genuine Parts Only:true | Spare Part Name: keyboard]
 Order [ID:026266 | Customer Name: john | Customer ID:000001 | Payment Type: card | Genuine Parts Only:false | Spare Part Name: mouse]
+Order [ID:086945 | Customer Name: susan | Customer ID:000003 | Payment Type: card | Genuine Parts Only:false | Spare Part Name: headset]

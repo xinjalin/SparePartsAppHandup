@@ -230,6 +230,7 @@ public class MenuOptions {
         // write to file
         WriteFile.writeFileOrders(orderObject.toString());
         System.out.println("Order saved");
+        display();
     }
 
     private void exit() {

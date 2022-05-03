@@ -7,10 +7,10 @@ public class OrderNumberGen {
         int test = randInt();
 
         while (orderNumberList.contains(String.valueOf(test))) {
-            System.out.println("Duplicate Detected");
+            // System.out.println("Duplicate Detected");
             test = randInt();
         }
-            System.out.println("dose not contain");
+            // System.out.println("dose not contain");
             orderNumberList.add(String.valueOf(test));
 
             WriteFile.writeFileOrderNumbers(String.valueOf(test));

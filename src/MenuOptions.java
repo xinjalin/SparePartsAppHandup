@@ -74,7 +74,7 @@ public class MenuOptions {
                         Select an option:\s
                           1) Select a customer\s
                           2) Select a part\s
-                          3) Save order\s
+                          3) Save order - Only save once a customer and a spare parts has been selected\s
                           4) Back to main menu\s
                         \s""");
 

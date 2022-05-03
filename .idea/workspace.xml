@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +152,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651578537446</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order">
+      <created>1651578782026</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651578782026</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order">
+      <created>1651578834648</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651578834648</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order">
+      <created>1651578913070</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651578913070</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,16 +196,5 @@
     <MESSAGE value="v0.06&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}" />
     <MESSAGE value="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order" />
     <option name="LAST_COMMIT_MESSAGE" value="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

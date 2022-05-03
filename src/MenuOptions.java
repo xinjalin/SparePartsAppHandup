@@ -203,7 +203,7 @@ public class MenuOptions {
         System.out.println("Saving order...");
 
         int orderNumber = OrderNumberGen.generateOrderNumber();
-        System.out.println(orderNumber);
+        // System.out.println(orderNumber);
 
         String customerName = customers.get(0).name();
         String customerID = customers.get(0).id();

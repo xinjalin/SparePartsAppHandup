@@ -229,6 +229,7 @@ public class MenuOptions {
 
             String allGenuine;
             // check if the order has genuine spare parts
+            // int i = 0;
             if (spareParts.get(0).genuine()) {
                 allGenuine = "1";
             } else {

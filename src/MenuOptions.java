@@ -40,7 +40,7 @@ public class MenuOptions {
         String customerID = input.nextLine();
         System.out.println("Enter customer name: ");
         String customerName = input.nextLine();
-        System.out.println("Enter customer payment type cash or card: ");
+        System.out.println("Enter customer payment type account or card: ");
         String customerPaymentType = input.nextLine();
 
         String customer = "[" + customerID + "," + customerName + "," + customerPaymentType + "]";
@@ -219,32 +219,30 @@ public class MenuOptions {
 
         int orderNumber = OrderNumberGen.generateOrderNumber();
         // System.out.println(orderNumber);
+        for (SparePartsObj sparePart : spareParts) {
+            String customerName = customers.get(0).name();
+            String customerID = customers.get(0).id();
+            String paymentType = customers.get(0).paymentType();
 
-        String customerName = customers.get(0).name();
-        String customerID = customers.get(0).id();
-        String paymentType = customers.get(0).paymentType();
+            String sparePartName = sparePart.name();
+            Boolean sparePartGenuine = sparePart.genuine();
 
-        // for (int i = 0; i < spareParts.size(); i++) {
-        String sparePartName = spareParts.get(0).name();
-        Boolean sparePartGenuine = spareParts.get(0).genuine();
-
-        String allGenuine;
-
-        // check if the order has genuine spare parts
-        if (spareParts.get(0).genuine()) {
-            allGenuine = "1";
-        } else  {
-            allGenuine = "0";
-
+            String allGenuine;
+            // check if the order has genuine spare parts
+            if (spareParts.get(0).genuine()) {
+                allGenuine = "1";
+            } else {
+                allGenuine = "0";
+            }
+            // create order object
+            OrderObject orderObject = new OrderObject(orderNumber, customerName, customerID, paymentType, sparePartGenuine, allGenuine, sparePartName);
+            // write to file
+            WriteFile.writeFileOrders(orderObject.toString());
         }
-
-        // create order object
-        OrderObject orderObject = new OrderObject(orderNumber, customerName, customerID, paymentType, sparePartGenuine, allGenuine, sparePartName);
-
-        // write to file
-        WriteFile.writeFileOrders(orderObject.toString());
         System.out.println("Order saved");
         System.out.println("Returning to the Main Menu...");
+        customers.clear();
+        spareParts.clear();
         display();
     }
 

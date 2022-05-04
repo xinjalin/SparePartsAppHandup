@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.07&#10;changelog&#10;&#10;- MenuOptions.java - saveOrder()&#10;getting object data to object method constructor&#10;currently getting error - {orders not working index 0 out of bounds for length 0}&#10;&#10;-- found error to be the program wanting both a customer and spare part selected before saving an order" />
+    <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OrderNumbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderNumbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -4,6 +4,8 @@
     <list default="true" id="30775ff3-bf92-43d2-a932-fac236ed0a2c" name="Changes" comment="v0.1&#10;can now store more than one object for spare parts for one order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OrderNumbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrderNumbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651623868890</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="v0.1&#10;can now store more than one object for spare parts for one order">
+      <created>1651641975018</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1651641975018</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
